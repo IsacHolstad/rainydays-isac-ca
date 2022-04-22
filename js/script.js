@@ -1,4 +1,4 @@
-const myAPI = "rainydaysjackets.flywheelsites.com/wp-json/wc/store/products"
+const myAPI = "https://rainydaysjackets.flywheelsites.com/"
 console.log(myAPI)
 const divContainer = document.querySelector(".container");
 
