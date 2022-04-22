@@ -1,0 +1,370 @@
+a {
+    color: white;
+  }
+  * {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  
+  .logo {
+    position: absolute;
+    width: 80px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .header {
+    background-color: transparent;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+  .header ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(10, 54, 65);
+  }
+  .header ul a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid rgb(10, 54, 65);
+    text-decoration: none;
+  }
+  .header ul a:hover {
+    color: chartreuse;
+  }
+  
+  .header .logo {
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 10px 20px;
+  }
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon:before {
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 5px;
+    transition: all 0.2s ease-out;
+  }
+  .header .menu-icon .nav-icon:after {
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: -5px;
+    transition: all 0.2s ease-out;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .guy {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0 auto;
+  }
+  
+  .member {
+    font-size: 15px;
+    text-align: center;
+  }
+  .wraper-member{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  h1{
+    padding-top: 150px;
+    text-align: center;
+    color: red;
+    font-variant-caps: all-petite-caps;
+    
+  }
+  .email {
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .password {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .done {
+    position: relative;
+    align-items: center;
+  
+    justify-content: space-between;
+  }
+  
+  
+  
+  .footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(10, 54, 65);
+    height: 150px;
+    top: 3000px;
+    color: white;
+    font-size: 18px;
+    
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .member {
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    *{
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+    .guy {
+      position: absolute;
+      top: 50px;
+    }
+    .member {
+      position: absolute;
+      top: 1280px;
+      font-size: 25px;
+      font-weight: bolder;
+      left: 260px;
+    }
+    
+    .wraper-member{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(10, 54, 65);
+      height: 300px;
+      top: 3000px;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+    .member {
+      position: absolute;
+      top: 1620px;
+      font-size: 25px;
+      font-weight: bolder;
+      left: 350px;
+    }
+    .email,
+    .password,
+    .done {
+      position: absolute;
+      top: 80px;
+      align-content: center;
+      left: 280px;
+    }
+    .card1,
+    .card2 {
+      display: flex;
+      position: relative;
+      border-radius: 2px;
+      width: 200px;
+      background-color: rgb(10, 54, 65);
+      height: 200px;
+      top: 1140px;
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+  
+    .email {
+      position: relative;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .password {
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .done {
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .mensjcktbtn {
+      position: relative;
+      top: 230px;
+      height: 35px;
+      color: white;
+      border-radius: 2px;
+      background-color: rgb(10, 54, 65);
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .mensyellowjckt {
+      position: relative;
+      top: 270px;
+      width: 180px;
+      padding-left: 100px;
+    }
+    .mensorangejckt {
+      position: relative;
+      top: 270px;
+      width: 180px;
+      padding-left: 400px;
+    }
+    .womansjcktbtn {
+      position: relative;
+      top: 500px;
+      height: 35px;
+      color: white;
+      border-radius: 2px;
+      background-color: rgb(10, 54, 65);
+      width: 170px;
+      display: flex;
+      justify-content: center;
+    }
+    .womansorangejckt {
+      position: relative;
+      top: 580px;
+      width: 180px;
+      padding-left: 100px;
+    }
+    .womansyellowjckt {
+      position: relative;
+      top: 580px;
+      width: 180px;
+      padding-left: 410px;
+    }
+    .buy1 {
+      position: absolute;
+      top: 2209px;
+      width: 40px;
+      left: 170px;
+      border-radius: 2px;
+      color: white;
+      background-color: rgb(10, 54, 65);
+    }
+    .buy2 {
+      position: absolute;
+      width: 40px;
+      border-radius: 2px;
+      color: white;
+      background-color: rgb(10, 54, 65);
+      top: 2209px;
+      right: 235px;
+    }
+    .buy3 {
+      position: absolute;
+      width: 40px;
+      border-radius: 2px;
+      color: white;
+      background-color: rgb(10, 54, 65);
+      top: 2800px;
+      left: 155px;
+    }
+    .buy4 {
+      position: absolute;
+      width: 40px;
+      border-radius: 2px;
+      color: white;
+      background-color: rgb(10, 54, 65);
+      top: 2800px;
+      left: 765px;
+    }
+    .instagramicon,
+    .facebookicon,
+    .twittericon {
+      position: absolute;
+      display: inline-block;
+      justify-content: space-between;
+      width: 48px;
+    }
+    .footer {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(10, 54, 65);
+      height: 300px;
+      top: 3000px;
+      color: white;
+    }
+  }
+  
