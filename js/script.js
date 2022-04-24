@@ -10,14 +10,16 @@ async function jackets(){
         const jcktData = responseJSON.data;
         for (let i = 0; i < jcktData.length; i++) {
             console.log(jcktData[i].name)
+                divContainer.innerHTML += `<h1>${jcktData[i].name}</h1>`
            
         }
-        divContainer.innerHTML += `<li>${jcktData[i].name}</li>`
+        
     }
     catch(error){
-        console.log("error")
+        //console.log("error")
+        divContainer.innerHTML += `<h1>there is an error happening😓</h1>`
     }
 }
-jackets()
+jackets();
 
 
