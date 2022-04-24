@@ -7,23 +7,23 @@ const divContainer = document.querySelector(".container");
 async function jackets(){
     try{
         const response = await fetch(myAPI);
-        //console.log(response)
+        console.log(response)
         const responseJSON = await response.json()
         console.log(responseJSON)
-        const jcktData = responseJSON.data;
-        console.log(jcktData)
-        for (let i = 0; i < jcktData.length; i++) {
-            console.log(jcktData[i].images)
-                divContainer.innerHTML += `<li>${jcktData[i].images}</li>`
+        const jcktData = responseJSON.results;
+        for (let i = 0; i < jcktData.length; i++){
+            console.log(jcktData[i].id)
+                divContainer.innerHTML += `<li><a href="detaild-jckt.html?id=${jcktData[i].name}">${jcktData[i].name}</a></li>`;
            
         }
         
     }
     catch(error){
         //console.log("error")
-        divContainer.innerHTML += `<h1>there is an error happening😓</h1>`
+        //divContainer.innerHTML += `<h1>there is an error happening😓</h1>`
     }
 }
 jackets();
+console.log(myAPI)
 
 
