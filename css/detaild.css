@@ -97,7 +97,7 @@ a {
   .logo {
     position: absolute;
     width: 80px;
-    top: 5px;
+    top: 1px;
   }
   .card {
     position: absolute;
@@ -107,34 +107,7 @@ a {
     height: 400px;
     border-radius: 5px;
   }
-  .orangejckt {
-    position: absolute;
-    top: 370px;
-    width: 200px;
-    padding-left: 25px;
-  }
-  .info {
-    position: absolute;
-    font-size: 18px;
-    font-weight: bolder;
-    left: 270px;
-    top: 350px;
-  }
-  .kjøp {
-    position: absolute;
-    top: 600px;
-    left: 270px;
-    width: 100px;
-    height: 25px;
-    color: white;
-    border-radius: 2px;
-    background-color: rgb(10, 54, 65);
-  }
-  .jcktinfo {
-    position: absolute;
-    top: 1100px;
-    justify-content: center;
-  }
+  
   .footer {
     position: absolute;
     top: 2000px;
@@ -152,29 +125,8 @@ a {
       height: 400px;
       border-radius: 5px;
     }
-    .orangejckt {
-      position: absolute;
-      top: 370px;
-      width: 200px;
-      padding-left: 40px;
-    }
-    .info {
-      position: absolute;
-      font-size: 25px;
-      font-weight: bolder;
-      left: 450px;
-      top: 350px;
-    }
-    .kjøp {
-      position: absolute;
-      top: 600px;
-      left: 450px;
-      width: 100px;
-      height: 25px;
-      color: white;
-      border-radius: 2px;
-      background-color: rgb(10, 54, 65);
-    }
+    
+    
   }
   @media screen and (min-width: 1024px) and (max-width: 1400px) {
     .header li {
@@ -199,28 +151,7 @@ a {
       height: 400px;
       border-radius: 5px;
     }
-    .orangejckt {
-      position: absolute;
-      top: 370px;
-      width: 200px;
-      padding-left: 40px;
-    }
-    .info {
-      position: absolute;
-      font-size: 25px;
-      font-weight: bolder;
-      left: 650px;
-      top: 350px;
-    }
-    .kjøp {
-      position: absolute;
-      top: 600px;
-      left: 650px;
-      width: 100px;
-      height: 25px;
-      color: white;
-      border-radius: 2px;
-      background-color: rgb(10, 54, 65);
-    }
+    
+    
   }
   
