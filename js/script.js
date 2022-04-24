@@ -6,15 +6,15 @@ const divContainer = document.querySelector(".container");
 
 async function jackets(){
     try{
-        const response = await fetch(corsFixUrl);
+        const response = await fetch(myAPI);
         //console.log(response)
         const responseJSON = await response.json()
         console.log(responseJSON)
-        const jcktData = responseJSON.results;
+        const jcktData = responseJSON.data;
         console.log(jcktData)
         for (let i = 0; i < jcktData.length; i++) {
-            console.log(jcktData[i].id)
-                divContainer.innerHTML = `<li>${jcktData[i].id}</li>`
+            console.log(jcktData[i].images)
+                divContainer.innerHTML += `<li>${jcktData[i].images}</li>`
            
         }
         
