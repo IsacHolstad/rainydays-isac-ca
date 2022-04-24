@@ -1,4 +1,4 @@
-const myAPI = 'http://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products'
+const myAPI = 'http://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/'
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
@@ -13,14 +13,14 @@ async function jackets(){
         const jcktData = responseJSON.results;
         for (let i = 0; i < jcktData.length; i++){
             console.log(jcktData[i].id)
-                divContainer.innerHTML += `<li><a href="detaild-jckt.html?id=${jcktData[i].name}">${jcktData[i].name}</a></li>`;
+                divContainer.innerHTML += `<li><a href="detaild-jckt.html?id=${jcktData[i].id}">${jcktData[i].name}</a></li>`;
            
         }
         
     }
     catch(error){
         //console.log("error")
-        //divContainer.innerHTML += `<h1>there is an error happening😓</h1>`
+        divContainer.innerHTML += `<h1>there is an error happening😓</h1>`
     }
 }
 jackets();
