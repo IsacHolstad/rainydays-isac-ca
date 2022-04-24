@@ -126,24 +126,6 @@ a {
     font-variant-caps: all-petite-caps;
     
   }
-  .email {
-    position: relative;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .password {
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .done {
-    position: relative;
-    align-items: center;
-  
-    justify-content: space-between;
-  }
-  
   
   
   .footer {
@@ -154,6 +136,8 @@ a {
     top: 3500px;
     color: white;
     font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
     
   }
   div.container{
@@ -275,6 +259,8 @@ a {
       background-color: rgb(10, 54, 65);
       height: 300px;
       top: 4000px;
+      text-align: center;
+      padding-top: 5px;
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 3500px) {
@@ -356,6 +342,8 @@ a {
       height: 300px;
       top: 5000px;
       color: white;
+      text-align: center;
+      padding-top: 5px;
     }
   }
   
