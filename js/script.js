@@ -1,4 +1,4 @@
-const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products"
+const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/"
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
@@ -11,11 +11,11 @@ async function jackets() {
         const responseJSON = await response.json();
         console.log(responseJSON);
         const jacketData = responseJSON.results;
-        console.log(jacketData)
-        for (let i = 0; i < jacketData.length; i++) {
-            console.log(jacketData[i]);
+        //console.log(jacketData)
+        for (let i = 0; i < responseJSON.length; i++) {
+            console.log(responseJSON[i].name);
 
-            divContainer.innerHTML += `<li><span>${jacketData[i].name}</span></li>`;
+            divContainer.innerHTML += `<li><span>${responseJSON[i].name}</span></li>`;
 
         }
         

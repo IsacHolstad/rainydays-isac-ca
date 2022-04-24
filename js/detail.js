@@ -1,3 +1,3 @@
 const jacketData = document.querySelector(".card")
-const API = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products?id=11"
+const API = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/10"
 
