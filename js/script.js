@@ -1,4 +1,4 @@
-const myAPI = 'http://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/'
+const myAPI = 'https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products?id=21'
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
@@ -6,14 +6,15 @@ const divContainer = document.querySelector(".container");
 
 async function jackets(){
     try{
-        const response = await fetch(myAPI);
+        const response = await fetch(corsFixUrl);
         console.log(response)
-        const responseJSON = await response.json()
-        console.log(responseJSON)
-        const jcktData = responseJSON.results;
+        const jsonData = await response.json()
+        console.log(jsonData)
+        const results = jsonData.data;
+        console.log(results)
         for (let i = 0; i < jcktData.length; i++){
-            console.log(jcktData[i].id)
-                divContainer.innerHTML += `<li><a href="detaild-jckt.html?id=${jcktData[i].id}">${jcktData[i].name}</a></li>`;
+            console.log(results[i].name)
+                divContainer.innerHTML += `<li>${results[i]}</li>`;
            
         }
         
@@ -24,6 +25,6 @@ async function jackets(){
     }
 }
 jackets();
-console.log(myAPI)
+
 
 

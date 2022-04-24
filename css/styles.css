@@ -267,97 +267,10 @@ a {
       justify-content: space-between;
     }
   
-    .mensjcktbtn {
-      position: relative;
-      top: 230px;
-      height: 35px;
-      color: white;
-      border-radius: 2px;
-      background-color: rgb(10, 54, 65);
-      width: 150px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
-    .mensyellowjckt {
-      position: relative;
-      top: 270px;
-      width: 180px;
-      padding-left: 100px;
-    }
-    .mensorangejckt {
-      position: relative;
-      top: 270px;
-      width: 180px;
-      padding-left: 400px;
-    }
-    .womansjcktbtn {
-      position: relative;
-      top: 500px;
-      height: 35px;
-      color: white;
-      border-radius: 2px;
-      background-color: rgb(10, 54, 65);
-      width: 170px;
-      display: flex;
-      justify-content: center;
-    }
-    .womansorangejckt {
-      position: relative;
-      top: 580px;
-      width: 180px;
-      padding-left: 100px;
-    }
-    .womansyellowjckt {
-      position: relative;
-      top: 580px;
-      width: 180px;
-      padding-left: 410px;
-    }
-    .buy1 {
-      position: absolute;
-      top: 2209px;
-      width: 40px;
-      left: 170px;
-      border-radius: 2px;
-      color: white;
-      background-color: rgb(10, 54, 65);
-    }
-    .buy2 {
-      position: absolute;
-      width: 40px;
-      border-radius: 2px;
-      color: white;
-      background-color: rgb(10, 54, 65);
-      top: 2209px;
-      right: 235px;
-    }
-    .buy3 {
-      position: absolute;
-      width: 40px;
-      border-radius: 2px;
-      color: white;
-      background-color: rgb(10, 54, 65);
-      top: 2800px;
-      left: 155px;
-    }
-    .buy4 {
-      position: absolute;
-      width: 40px;
-      border-radius: 2px;
-      color: white;
-      background-color: rgb(10, 54, 65);
-      top: 2800px;
-      left: 765px;
-    }
-    .instagramicon,
-    .facebookicon,
-    .twittericon {
-      position: absolute;
-      display: inline-block;
-      justify-content: space-between;
-      width: 48px;
-    }
+    
+  
+     
+    
     .footer {
       position: absolute;
       width: 100%;
