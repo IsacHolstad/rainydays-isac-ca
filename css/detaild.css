@@ -99,14 +99,7 @@ a {
     width: 80px;
     top: 1px;
   }
-  .card {
-    position: absolute;
-    width: 100%;
-    top: 300px;
-    background-color: lightgray;
-    height: 400px;
-    border-radius: 5px;
-  }
+  
   
   .footer {
     position: absolute;

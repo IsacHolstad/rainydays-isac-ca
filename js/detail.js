@@ -1,5 +1,3 @@
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString)
+const jacketData = document.querySelector(".card")
+const API = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products?id=11"
 
-const id = params.get('id')
-const lastApi = `https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/${id}
