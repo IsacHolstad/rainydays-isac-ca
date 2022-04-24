@@ -4,26 +4,29 @@ const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
 const ulList = document.querySelector(".ul-list");
 const jacketImage = document.querySelector(".container")
+const img = document.querySelector(".jacket-img")
 
 async function jackets() {
     try{
-        const response = await fetch(myAPI);
+        const response = await fetch(corsFixUrl);
         console.log(response);
         const responseJSON = await response.json();
         console.log(responseJSON);
         const jacketData = responseJSON.data;
-        //console.log(jacketData)
+        //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
             console.log(responseJSON[i].name);
 
-            ulList.innerHTML += `<h1>${responseJSON[i].name}</h1>`;
+           
+            jacketImage.innerHTML += `<img src="${responseJSON[i].id}"><li>${responseJSON[i].name}</li></img>`;
 
         }
+        
         
 
     }
     catch(error) {
-        console.log("error")
+        ulList.innerHTML = `<h1>sorry, there seem to be and error</h1>`
     }
 }
 jackets();

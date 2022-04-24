@@ -156,6 +156,23 @@ a {
     font-size: 18px;
     
   }
+  div.container{
+    display: flex;
+    margin-top: 50px;
+    width: 400px;
+    list-style: none;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  img.jacket-img{
+    width: 200px;
+    height: 200px;
+  }
+  div img{
+    width: 300px;
+    height: 300px;
+  }
+  
   
   @media screen and (min-width: 481px) and (max-width: 768px) {
     h3.member {
@@ -210,28 +227,57 @@ a {
       position: absolute;
       top: 50px;
     }
-    .member {
-      position: absolute;
-      top: 1280px;
+    h3.member {
+      font-weight: bold;
+      text-align: center;
       font-size: 25px;
-      font-weight: bolder;
-      left: 260px;
+      margin-bottom: 5px;
     }
     
-    .wraper-member{
+    input.email{
+      width: 250px;
+      height: 25px;
+      border-radius: 50px;
+      margin-bottom: 5px;
+    }
+    input.password{
+      width: 250px;
+      height: 25px;
+      border-radius: 50px;
+
+    }
+    input.done{
+      width: 100px;
+      margin-top: 5px;
+      height: 22px;
+      border: 2px solid green;
+      border-radius: 50px;
+      background-color: transparent;
+    }
+    div.wraper-member{
+      padding-top: 1300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h3.member{
+      padding-top: 50px;
+    }
+    div.container{
       display: flex;
       flex-direction: column;
-      align-items: center;
+      margin-top: 500px;
     }
     .footer {
       position: absolute;
       width: 100%;
       background-color: rgb(10, 54, 65);
       height: 300px;
-      top: 3000px;
+      top: 4000px;
     }
   }
-  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+  @media screen and (min-width: 1024px) and (max-width: 3500px) {
     .header li {
       float: left;
     }
@@ -246,50 +292,58 @@ a {
     .menu-icon {
       display: none;
     }
-    .member {
-      position: absolute;
-      top: 1620px;
+    .guy{
+      display: none;
+    }
+    
+    h3.member {
+      font-weight: bold;
+      text-align: center;
       font-size: 25px;
-      font-weight: bolder;
-      left: 350px;
+      margin-top: 5px;
     }
-    .email,
-    .password,
-    .done {
-      position: absolute;
-      top: 80px;
-      align-content: center;
-      left: 280px;
+    
+    input.email{
+      width: 300px;
+      height: 25px;
+      border-radius: 50px;
+      margin-bottom: 5px;
     }
-    .card1,
-    .card2 {
-      display: flex;
-      position: relative;
-      border-radius: 2px;
+    input.password{
+      width: 300px;
+      height: 25px;
+      border-radius: 50px;
+
+    }
+    .logo{
       width: 200px;
-      background-color: rgb(10, 54, 65);
-      height: 200px;
-      top: 1140px;
-      margin: 0 auto;
-      padding: 0 auto;
+      padding-left: 5px;
+
     }
+    input.done{
+      width: 150px;
+      margin-top: 5px;
+      height: 22px;
+      border: 2px solid green;
+      border-radius: 50px;
+      background-color: transparent;
+    }
+    div.wraper-member{
+      padding-top: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    div.container {
+      display: flex;
+      margin-top: 800px;
+      flex-direction: column;
+    }
+    
+    
   
-    .email {
-      position: relative;
-      align-content: center;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .password {
-      position: relative;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .done {
-      position: relative;
-      align-items: center;
-      justify-content: space-between;
-    }
+   
   
     
   
@@ -300,7 +354,7 @@ a {
       width: 100%;
       background-color: rgb(10, 54, 65);
       height: 300px;
-      top: 3000px;
+      top: 5000px;
       color: white;
     }
   }
