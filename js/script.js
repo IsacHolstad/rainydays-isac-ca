@@ -18,7 +18,7 @@ async function jackets() {
             console.log(responseJSON[i].name);
 
            
-            jacketImage.innerHTML += `<img src="${responseJSON[i].images.name}">
+            jacketImage.innerHTML += `<img src="${responseJSON[i].thumbnail}"/>
             <li>${responseJSON[i].name}</li><li>${responseJSON[i].price_html}</li>
             
             `
