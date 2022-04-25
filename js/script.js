@@ -19,8 +19,8 @@ async function jackets() {
 
            
             jacketImage.innerHTML += `<img src="${responseJSON[i]}">
-            <li>${responseJSON[i].name}</li><li>${responseJSON[i].prices.price}</li>
-            <li>${responseJSON[i].sale_price}</li>`
+            <li>${responseJSON[i].name}</li><li>${responseJSON[i].prices.regular_price}</li>
+            <li>${responseJSON[i].prices.sale_price}</li>`
 
         }
         
