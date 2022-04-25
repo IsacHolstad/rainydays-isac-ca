@@ -106,7 +106,8 @@ a {
   
   .guy {
     width: 100%;
-    padding-top: 10px;
+    position: absolute;
+    margin-top: 10px;
     padding-left: 0 auto;
   }
   
@@ -117,7 +118,7 @@ a {
   .wraper-member{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: 1105px;
   }
   h1{
     padding-top: 150px;
@@ -126,23 +127,37 @@ a {
     font-variant-caps: all-petite-caps;
     
   }
-  
-  
-  .footer {
-    position: absolute;
-    width: 100%;
-    background-color: rgb(10, 54, 65);
-    height: 150px;
-    top: 3500px;
-    color: white;
-    font-size: 18px;
+  h3.member {
+    font-weight: bold;
     text-align: center;
-    padding-top: 5px;
-    
+    font-size: 25px;
+    margin-bottom: 5px;
   }
+  
+  input.email{
+    width: 250px;
+    height: 25px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+  }
+  input.password{
+    width: 250px;
+    height: 25px;
+    border-radius: 50px;
+
+  }
+  input.done{
+    width: 100px;
+    margin-top: 5px;
+    height: 22px;
+    border: 2px solid green;
+    border-radius: 50px;
+    background-color: transparent;
+  }
+  
   div.container{
     display: flex;
-    margin-top: 50px;
+    margin-top: 350px;
     width: 400px;
     list-style: none;
     flex-direction: column;
@@ -155,6 +170,19 @@ a {
   div img{
     width: 300px;
     height: 300px;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(10, 54, 65);
+    height: 150px;
+    top: 4300px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5px;
+    
   }
   
   
