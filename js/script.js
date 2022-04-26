@@ -1,4 +1,4 @@
-const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/"
+const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products"
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
@@ -15,26 +15,25 @@ async function showJackets() {
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
-            console.log(responseJSON[i].name);
+            console.log(responseJSON[i].images);
 
            
-            jacketData.innerHTML += `<img src="${responseJSON[i].images.srcset}"></img>
-            <li>${responseJSON[i].name}</li>
+            jacketData.innerHTML += `<img src="${responseJSON[i].id.src}"></img>
+            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}"></li>
             <li>${responseJSON[i].price_html}</li>`
             
-            
-           
-
         }
+            
         
         
 
     }
     catch(error) {
-        ulList.innerHTML = `<h1>sorry, there seem to be and error</h1>`
+        console.log("error")
     }
 }
 showJackets();
 
+console.log(myAPI)
 
 
