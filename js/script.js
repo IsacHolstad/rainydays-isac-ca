@@ -19,7 +19,7 @@ async function jackets() {
 
            
             jacketImage.innerHTML += `<img src="${responseJSON[i].images.src}"/>
-            <li>${responseJSON[i].name}</li><li>${responseJSON[i].price_html}</li>
+            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}">/></li><li>${responseJSON[i].price_html}</li>
             
             `
 
