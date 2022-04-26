@@ -18,8 +18,8 @@ async function jackets() {
             console.log(responseJSON[i].name);
 
            
-            jacketImage.innerHTML += `<img src="${responseJSON[i].id.images}"></img>
-            <li>${responseJSON[i].name}</li><li>${responseJSON[i].price_html}</li><li>${responseJSON[i].name}</li>
+            jacketImage.innerHTML += `<img srcset="${responseJSON[i].images.srcset}"></img>
+            <li>${responseJSON[i].name}></li><li>${responseJSON[i].price_html}</li>
             
             `
 
