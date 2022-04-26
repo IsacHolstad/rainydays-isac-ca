@@ -316,20 +316,10 @@ a {
       background-color: rgb(10, 54, 65);
     }
   }
-  @media screen and (min-width: 1024px) and (max-width: 1200px) {
-    .header li {
-      float: left;
+  @media screen and (min-width: 1024px) and (max-width: 3500px) {
+    .footer{
+      width: 100%;
     }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .menu-icon {
-      display: none;
-    }
+    
   }
   

@@ -215,27 +215,14 @@ a {
       border-radius: 50px;
       background-color: transparent;
     }
+    .wraper-member{
+      padding-top: 20px;
+    }
 
   }
   @media screen and (min-width: 769px) and (max-width: 1023px) {
-    *{
-      margin: 0 auto;
-      padding: 0 auto;
-    }
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .menu-icon {
-      display: none;
-    }
+    
+    
     .guy {
       position: absolute;
       top: 50px;
@@ -267,8 +254,8 @@ a {
       border-radius: 50px;
       background-color: transparent;
     }
-    div.wraper-member{
-      padding-top: 1300px;
+    .wraper-member{
+      padding-top: 500px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -293,86 +280,10 @@ a {
     }
   }
   @media screen and (min-width: 1024px) and (max-width: 3500px) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .menu-icon {
-      display: none;
-    }
+    
     .guy{
       display: none;
     }
-    
-    h3.member {
-      font-weight: bold;
-      text-align: center;
-      font-size: 25px;
-      margin-top: 5px;
-    }
-    
-    input.email{
-      width: 300px;
-      height: 25px;
-      border-radius: 50px;
-      margin-bottom: 5px;
-    }
-    input.password{
-      width: 300px;
-      height: 25px;
-      border-radius: 50px;
-
-    }
-    .logo{
-      width: 200px;
-      padding-left: 5px;
-
-    }
-    input.done{
-      width: 150px;
-      margin-top: 5px;
-      height: 22px;
-      border: 2px solid green;
-      border-radius: 50px;
-      background-color: transparent;
-    }
-    div.wraper-member{
-      padding-top: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    div.container {
-      display: flex;
-      margin-top: 800px;
-      flex-direction: column;
-    }
-    
-    
-  
    
-  
-    
-  
-     
-    
-    .footer {
-      position: absolute;
-      width: 100%;
-      background-color: rgb(10, 54, 65);
-      height: 300px;
-      top: 5000px;
-      color: white;
-      text-align: center;
-      padding-top: 5px;
-    }
   }
   
