@@ -8,7 +8,7 @@ const img = document.querySelector(".jacket-img")
 
 async function jackets() {
     try{
-        const response = await fetch(myAPI);
+        const response = await fetch(corsFixUrl);
         console.log(response);
         const responseJSON = await response.json();
         console.log(responseJSON);
@@ -18,8 +18,8 @@ async function jackets() {
             console.log(responseJSON[i].name);
 
            
-            jacketImage.innerHTML += `<img src="${responseJSON[i].images.src}"/>
-            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}">/></li><li>${responseJSON[i].price_html}</li>
+            jacketImage.innerHTML += `<img src="${responseJSON[i].id.images}"></img>
+            <li>${responseJSON[i].name}</li><li>${responseJSON[i].price_html}</li><li>${responseJSON[i].name}</li>
             
             `
 
