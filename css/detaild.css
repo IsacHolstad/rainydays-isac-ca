@@ -97,7 +97,8 @@ a {
   .logo {
     position: absolute;
     width: 80px;
-    top: 1px;
+    top: 5px;
+    left: 5px;
   }
   div.card{
     position: absolute;
