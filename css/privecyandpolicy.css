@@ -95,33 +95,35 @@ a {
     transform: rotate(45deg);
     top: 0;
   }
+  
   .logo {
     position: absolute;
     width: 80px;
     top: 5px;
     left: 5px;
   }
-  .contactus {
-    position: absolute;
-    top: 450px;
-    padding-left: 100px;
+  div.contactus {
+    
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
   }
-  .email {
-    position: absolute;
-    top: 320px;
-    left: 450px;
+  input.email {
+    
+    align-items: center;
+    justify-content: center;
   }
-  .message {
-    position: absolute;
+  input.message {
+    display: flex;
+    flex-direction: column;
+  
     align-content: center;
     top: 400px;
     left: 400px;
     height: 300px;
     width: 300px;
   }
-  .sendbtn {
+  button.sendbtn {
     position: absolute;
     top: 730px;
     left: 530px;
@@ -129,25 +131,23 @@ a {
     color: white;
     background-color: rgb(10, 54, 65);
   }
-  .aboutus {
-    position: absolute;
-    top: 1000px;
-    padding-left: 100px;
+  div.aboutus {
+    text-align: center;
     font-size: 18px;
     font-weight: bold;
   }
-  .aboutcard {
-    position: absolute;
+  div.aboutcard {
+    align-items: center;
+    justify-content: center;
+    
     width: 400px;
     height: 600px;
     background-color: lightgray;
-    top: 900px;
-    left: 400px;
+   
   }
-  .aboutinfo {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+  div.aboutinfo {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
   .policy {
@@ -157,15 +157,15 @@ a {
     font-size: 18px;
     font-weight: bold;
   }
-  .policyinfo {
-    position: absolute;
-    top: 1100px;
+  div.policyinfo {
+   text-align: center;
   }
   .footer {
     position: absolute;
     top: 2000px;
     width: 100%;
-    height: 300px;
+    height: 150px;
+    left: 0px;
   
     background-color: rgb(10, 54, 65);
     color: white;
