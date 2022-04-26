@@ -100,6 +100,12 @@ a {
     top: 5px;
     left: 5px;
   }
+  .jacket-tag{
+    text-align: center;
+  }
+  .jacket-info-tag{
+    text-align: center;
+  }
   div.card{
     position: absolute;
     border-radius: 30px;
