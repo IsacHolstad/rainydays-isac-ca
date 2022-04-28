@@ -1,10 +1,12 @@
-const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products"
+const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/";
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
-const ulList = document.querySelector(".ul-list");
+const jacketPng = document.querySelector(".jacketpng");
 const jacketData = document.querySelector(".container")
 const img = document.querySelector(".jacket-img")
+
+//console.log(window.location)
 
 async function showJackets() {
     try{
@@ -15,12 +17,12 @@ async function showJackets() {
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
-            console.log(responseJSON[i]);
+            //console.log(responseJSON[i]);
 
            
-            jacketData.innerHTML += `<img src="${responseJSON[i].images.src}"></img>
-            <li>${responseJSON[i].price_html}</li>
-            <li>${responseJSON[i].name}</li>`
+            jacketData.innerHTML += `<img src="${responseJSON[i].images}"></img>
+            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}"></li>
+            <li>${responseJSON[i].price_html}</li>`
 
             
             
@@ -32,7 +34,8 @@ async function showJackets() {
 
     }
     catch(error) {
-        console.log("error")
+        jacketData.innerHTML = `<h1>404</h1>`
+       
     }
 }
 showJackets();

@@ -1,9 +1,15 @@
-const ApiUrl = 'https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/?catagory=${id}'
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get('id')
+
+
+
+const ApiUrl = 'https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/?id=${id}'
 console.log(ApiUrl)
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + ApiUrl;
 
-const jacketData = document.querySelector(".jacket");
+const jcktDataInfo = document.querySelector(".jacket");
 
 async function jcktInfo() {
     try{
@@ -16,7 +22,7 @@ async function jcktInfo() {
         for (let i = 0; i < responseJSON.length; i++) {
             console.log(responseJSON[i]);
 
-            jacketData.innerHTML += `<img src=${responseJSON[i].images.src}">`;
+            jcktDataInfo.innerHTML += `<img src="${responseJSON[i].images.src}"></li>`;
         }
         
     }
