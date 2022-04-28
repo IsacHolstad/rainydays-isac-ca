@@ -15,6 +15,7 @@ a {
     
   }
   
+  
   .logo {
     position: absolute;
     width: 80px;
@@ -284,8 +285,8 @@ a {
       position: absolute;
       width: 100%;
       background-color: rgb(10, 54, 65);
-      height: 300px;
-      top: 4000px;
+      height: 100px;
+      top: 5000px;
       text-align: center;
       padding-top: 5px;
     }

@@ -15,11 +15,11 @@ async function showJackets() {
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
-            console.log(responseJSON[i].images);
+            console.log(responseJSON[i]);
 
            
             jacketData.innerHTML += `<img src="${responseJSON[i].id.src}"></img>
-            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}"></li>
+            <li><a href="detaild-jckt.html?id=${responseJSON[i].short_description}"></li>
             <li>${responseJSON[i].price_html}</li>`
             
         }
