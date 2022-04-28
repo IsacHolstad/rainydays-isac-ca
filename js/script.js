@@ -12,7 +12,7 @@ async function showJackets() {
         console.log(response);
         const responseJSON = await response.json();
         console.log(responseJSON);
-        const jacketInfo = responseJSON.data;
+        const dataArray = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
             console.log(responseJSON[i].images);
