@@ -18,9 +18,12 @@ async function showJackets() {
             console.log(responseJSON[i]);
 
            
-            jacketData.innerHTML += `<img src="${responseJSON[i].thumbnail}"></img>
+            jacketData.innerHTML += `<img src="${responseJSON[i].images.src}"></img>
             <li>${responseJSON[i].price_html}</li>
             <li>${responseJSON[i].name}</li>`
+
+            
+            
             
         }
             
@@ -35,5 +38,6 @@ async function showJackets() {
 showJackets();
 
 //console.log(myAPI)
+
 
 
