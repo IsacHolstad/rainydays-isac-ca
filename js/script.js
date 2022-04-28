@@ -1,10 +1,10 @@
-const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/";
+const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products";
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
 const jacketPng = document.querySelector(".jacketpng");
 const jacketData = document.querySelector(".container")
-const img = document.querySelector(".jacket-img")
+
 
 //console.log(window.location)
 
@@ -17,12 +17,12 @@ async function showJackets() {
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
-            //console.log(responseJSON[i]);
+        console.log(responseJSON[i].images);
 
            
-            jacketData.innerHTML += `<img src="${responseJSON[i].images}"></img>
-            <li><a href="detaild-jckt.html?id=${responseJSON[i].name}"></li>
-            <li>${responseJSON[i].price_html}</li>`
+            jacketData.innerHTML += `<img src="${responseJSON[i].id.images}"><li>${responseJSON[i].price_html}, ${responseJSON[i].name}</li>`;
+
+            
 
             
             
