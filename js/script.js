@@ -9,18 +9,18 @@ const img = document.querySelector(".jacket-img")
 async function showJackets() {
     try{
         const response = await fetch(corsFixUrl);
-        console.log(response);
+        //console.log(response);
         const responseJSON = await response.json();
-        console.log(responseJSON);
+        //console.log(responseJSON);
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
             console.log(responseJSON[i]);
 
            
-            jacketData.innerHTML += `<img src="${responseJSON[i].id.src}"></img>
-            <li><a href="detaild-jckt.html?id=${responseJSON[i].short_description}"></li>
-            <li>${responseJSON[i].price_html}</li>`
+            jacketData.innerHTML += `<img src="${responseJSON[i].thumbnail}"></img>
+            <li>${responseJSON[i].price_html}</li>
+            <li>${responseJSON[i].name}</li>`
             
         }
             
@@ -34,6 +34,6 @@ async function showJackets() {
 }
 showJackets();
 
-console.log(myAPI)
+//console.log(myAPI)
 
 
