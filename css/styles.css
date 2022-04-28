@@ -290,6 +290,16 @@ a {
       text-align: center;
       padding-top: 5px;
     }
+    .footer ul{
+      color: red;
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .footer ul:hover{
+      color: lime;
+    }
+    
+    
   }
   @media screen and (min-width: 1024px) and (max-width: 3500px) {
     
