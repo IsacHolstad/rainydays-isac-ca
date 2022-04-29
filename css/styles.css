@@ -133,7 +133,9 @@ a {
   .wraper-member{
     display: flex;
     flex-direction: column;
-    margin-top: 505px;
+    margin-top: 515px;
+    background-color: rgb(10, 54, 65);
+    height: 120px;
   }
   h1{
     padding-top: 150px;
@@ -145,6 +147,7 @@ a {
   h3.member {
     font-weight: bold;
     text-align: center;
+    color: white;
     font-size: 25px;
     margin-bottom: 5px;
   }
@@ -165,9 +168,10 @@ a {
     width: 100px;
     margin-top: 5px;
     height: 22px;
-    border: 2px solid green;
+    border: 2px solid lime;
     border-radius: 50px;
     background-color: transparent;
+    color: white;
   }
   
   div.container{
