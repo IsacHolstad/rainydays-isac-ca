@@ -20,16 +20,12 @@ a {
     text-align: center;
     
   }
-
-  
-  
   .rainydays-logo {
     position: absolute;
     width: 80px;
     top: 0px;
     left: 5px;
   }
-  
   .header {
     background-color: transparent;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -53,7 +49,6 @@ a {
   .header ul a:hover {
     color: chartreuse;
   }
-  
   .header .logo {
     float: left;
     display: block;
@@ -105,27 +100,22 @@ a {
   .header .menu-btn:checked ~ .menu {
     max-height: 240px;
   }
-  
   .header .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
   }
-  
   .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
   }
-  
   .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
   }
-  
   .guy {
     width: 100%;
     position: absolute;
     padding-top: 0px;
   }
-  
   .member {
     font-size: 15px;
     text-align: center;
@@ -142,7 +132,6 @@ a {
     text-align: center;
     color: red;
     font-variant-caps: all-petite-caps;
-    
   }
   h3.member {
     font-weight: bold;
@@ -175,13 +164,10 @@ a {
   }
   
   div.container{
-    display: flex;
-    margin-top: 350px;
-    justify-content: space-between;
-    width: 400px;
-    
+    display: list-item;
+    margin-top: 100px;
     list-style: none;
-    flex-direction: column;
+    
     font-size: 20px;
   }
   
@@ -190,15 +176,12 @@ a {
     width: 100%;
     background-color: rgb(10, 54, 65);
     height: 150px;
-    top: 4300px;
+    top: 3000px;
     color: white;
     font-size: 18px;
     text-align: center;
     padding-top: 5px;
-    
   }
-  
-  
   
   @media screen and (min-width: 481px) and (max-width: 768px) {
     h3.member {

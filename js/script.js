@@ -13,14 +13,17 @@ async function showJackets() {
         const response = await fetch(myAPI);
         //console.log(response);
         const responseJSON = await response.json();
-        //console.log(responseJSON);
+        console.log(responseJSON);
         const jacketInfo = responseJSON.data;
         //console.log(responseJSON.data)
         for (let i = 0; i < responseJSON.length; i++) {
-        console.log(responseJSON[i].images);
+        //console.log(responseJSON[i].images);
 
            
-            jacketData.innerHTML += `<li class="list-details"><a href="detaild-jckt.html?id=${responseJSON[i].price_html}", ${responseJSON[i].name}</li>`
+            jacketData.innerHTML += `<li class="list-details">
+            <a href="detaild-jckt.html?id=${responseJSON[i].price_html}",
+            <img src=${responseJSON[i].images.src}>,
+             ${responseJSON[i].name}</li>`
 
             
         }
