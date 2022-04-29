@@ -116,6 +116,15 @@ a {
     border: 2px solid rgb(10, 54, 65);
     
   }
+  .detaild-item{
+    text-decoration: none;
+    list-style-position: none;
+    text-align: center;
+    padding-top: 50px;
+    color: red;
+    font-size: 25px;
+    font-variant-caps:titling-caps;
+  }
   div.jacket{
     align-items: center;
     margin-top: 25px;

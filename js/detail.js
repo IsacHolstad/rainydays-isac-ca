@@ -17,7 +17,7 @@ async function getJacket() {
         console.log(response);
         const jacketData = await response.json();
         //console.log(jacketData);
-        jcktDataInfo.innerHTML = `<li>${jacketData.id}</li>`
+        jcktDataInfo.innerHTML = `<li class="detaild-item">${jacketData.name}</li>`
 
     }
     catch(error){
