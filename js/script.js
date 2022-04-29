@@ -20,7 +20,7 @@ async function showJackets() {
         console.log(responseJSON[i].images);
 
            
-            jacketData.innerHTML += `<img  width="324" height="324" src="${responseJSON[i].images.src}">`;
+            jacketData.innerHTML += `<li class="list-details">${responseJSON[i].price_html}, ${responseJSON[i].name}</li>`
 
             
 
