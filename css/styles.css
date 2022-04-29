@@ -17,8 +17,10 @@ a {
   .list-details{
     display: flex;
     padding: 25px;
+    text-align: center;
     
   }
+
   
   
   .rainydays-logo {
