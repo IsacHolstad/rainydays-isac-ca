@@ -1,4 +1,4 @@
-const myAPI = "https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products";
+const myAPI = 'https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products';
 //const proxy = "https://noroffcors.herokuapp.com/";
 //const corsFixUrl = proxy + myAPI;
 //console.log(myAPI)
