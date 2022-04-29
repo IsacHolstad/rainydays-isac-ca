@@ -4,7 +4,7 @@ const id = params.get('id')
 
 
 
-const ApiUrl = `https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products?category=11`
+const ApiUrl = `https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/${id}`
 console.log(ApiUrl)
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + ApiUrl;
