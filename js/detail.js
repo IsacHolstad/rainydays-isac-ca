@@ -9,7 +9,7 @@ console.log(ApiUrl)
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + ApiUrl;
 
-const jcktDataInfo = document.querySelector(".jacket");
+const jcktDataInfo = document.querySelector(".jacket-info");
 
 async function getJacket() {
     try{
@@ -17,7 +17,9 @@ async function getJacket() {
         console.log(response);
         const jacketData = await response.json();
         //console.log(jacketData);
-        jcktDataInfo.innerHTML = `<li class="detaild-item">${jacketData.name}</li>`
+        jcktDataInfo.innerHTML = `<li class="detaild-item">${jacketData.name} 
+        ${jacketData.price_html}</li>
+        <p class="ptag-description">${jacketData.short_description}</p>`
 
     }
     catch(error){

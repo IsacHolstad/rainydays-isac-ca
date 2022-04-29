@@ -134,14 +134,13 @@ a {
     border: 2px solid black;
     border-radius: 30px;
   }
-  .buy-btn{
-    display: flex;
-    flex-direction: column;
-    width: 80px;
-    height: 25px;
-    border-radius: 15px;
-    margin-top: 15px;
-    text-align: center;
+  .ptag-description{
+    padding-top: 300px;
+    
+  }
+  .jacket-png{
+    width: 200px;
+    padding-top: 50px;
   }
   li .footer{
     text-decoration: none;
