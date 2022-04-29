@@ -140,6 +140,13 @@ a {
     font-size: 25px;
     margin-bottom: 5px;
   }
+  li.list-details{
+    color: red;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    font-size: 25px;
+  }
   
   input.email{
     width: 250px;
@@ -170,13 +177,17 @@ a {
     
     font-size: 20px;
   }
+  img{
+    display: flex;
+    flex-direction: column;
+  }
   
   .footer {
     position: absolute;
     width: 100%;
     background-color: rgb(10, 54, 65);
     height: 150px;
-    top: 3000px;
+    top: 3500px;
     color: white;
     font-size: 18px;
     text-align: center;
@@ -214,6 +225,17 @@ a {
     .wraper-member{
       padding-top: 20px;
     }
+    .footer {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(10, 54, 65);
+      height: 150px;
+      top: 3500px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+      padding-top: 5px;
+    }
 
   }
   @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -250,12 +272,15 @@ a {
       border-radius: 50px;
       background-color: transparent;
     }
-    .wraper-member{
-      padding-top: 500px;
+    div.wraper-member{
+      height: 150px;
+      align-items: center;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      color: black;
+      
     }
     h3.member{
       padding-top: 50px;
@@ -290,6 +315,18 @@ a {
     .guy{
       display: none;
     }
+    div.wraper-member{
+      height: 150px;
+      margin-top: 150px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: black;
+      
+    }
+
    
   }
   
