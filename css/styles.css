@@ -123,9 +123,7 @@ a {
   .guy {
     width: 100%;
     position: absolute;
-    margin-top: 10px;
-    padding-left: 0 auto;
-    display: none;
+    padding-top: 0px;
   }
   
   .member {
@@ -135,7 +133,7 @@ a {
   .wraper-member{
     display: flex;
     flex-direction: column;
-    margin-top: 1105px;
+    margin-top: 505px;
   }
   h1{
     padding-top: 150px;
@@ -182,14 +180,7 @@ a {
     flex-direction: column;
     font-size: 20px;
   }
-  img{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-  }
   
-  
-
   .footer {
     position: absolute;
     width: 100%;
