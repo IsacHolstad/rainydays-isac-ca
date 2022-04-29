@@ -5,7 +5,6 @@ const id = params.get('id')
 
 
 const ApiUrl = `https://rainydaysjackets.flywheelsites.com/wp-json/wc/store/products/${id}`
-console.log(ApiUrl)
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFixUrl = proxy + ApiUrl;
 
@@ -14,9 +13,7 @@ const jcktDataInfo = document.querySelector(".jacket-info");
 async function getJacket() {
     try{
         const response = await fetch(corsFixUrl);
-        console.log(response);
         const jacketData = await response.json();
-        //console.log(jacketData);
         jcktDataInfo.innerHTML = `<li class="detaild-item">${jacketData.name} 
         ${jacketData.price_html}</li>
         <div>${jacketData.description}</div
