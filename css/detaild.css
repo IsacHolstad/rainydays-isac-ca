@@ -118,10 +118,11 @@ a {
   }
   .detaild-item{
     text-decoration: none;
-    list-style-position: none;
+    list-style-type: none;
     text-align: center;
     padding-top: 50px;
     font-size: 25px;
+    width: 90%;
     font-variant-caps:titling-caps;
   }
   div.jacket{
