@@ -12,6 +12,7 @@ a {
   
   .name-jckt{
     color: black;
+    text-decoration: none;
     
   }
   .list-details{
@@ -20,15 +21,13 @@ a {
     text-align: center;
     
   }
-  .rainydays-logo {
+  img.logo {
     position: absolute;
     width: 60px;
-    top: 10px;
-    left: 10px;
+    
   }
   .header {
     background-color: transparent;
-   
     position: absolute;
     top: 0px;
     width: 100%;
