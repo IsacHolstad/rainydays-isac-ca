@@ -110,7 +110,7 @@ a {
     border-radius: 30px;
     top: 200px;
     width: 80%;
-    height: 650px;
+    height: 70%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     place-items: center;
     border: 2px solid rgb(10, 54, 65);
@@ -145,7 +145,7 @@ a {
     width: 80%;
   }
   .card img{
-    width: 90%;
+    width: 80%;
     height: 30%;
   }
   .jacket-img{
