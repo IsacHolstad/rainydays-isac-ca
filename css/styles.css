@@ -167,11 +167,11 @@ a {
     border-radius: 50px;
 
   }
-  input.done{
+  .done{
     width: 100px;
     margin-top: 5px;
     height: 22px;
-    border: 2px solid lime;
+    border: 1px solid black;
     border-radius: 50px;
     background-color: transparent;
     color: white;
