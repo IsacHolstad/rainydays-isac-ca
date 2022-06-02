@@ -20,7 +20,9 @@ a {
     border: 1px solid black;
     border-radius: 10px;
     background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
+  
   .list-details{
     display: flex;
     padding: 25px;
@@ -199,8 +201,25 @@ a {
     text-align: center;
     padding-top: 5px;
   }
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    div.wraper-member{
+      width: 100%;
+      position: relative;
+      margin-top: 60%;
+     
+      
+
+    }
+
+  }
   
   @media screen and (min-width: 481px) and (max-width: 768px) {
+    .guy {
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      padding-top: 0px;
+    }
     h3.member {
       font-weight: bold;
       text-align: center;
