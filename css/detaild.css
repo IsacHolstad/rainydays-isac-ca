@@ -7,7 +7,6 @@ a {
   }
   .header {
     background-color: transparent;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
     width: 100%;
     z-index: 3;
@@ -96,9 +95,9 @@ a {
   }
   .logo {
     position: absolute;
-    width: 80px;
-    top: 5px;
-    left: 5px;
+    width: 60px;
+    top: 10px;
+    left: 10px;
   }
   .jacket-tag{
     text-align: center;
@@ -107,12 +106,12 @@ a {
     text-align: center;
   }
   div.card{
-    position: absolute;
+    position: relative;
     border-radius: 30px;
     top: 200px;
-    width: 500px;
-    left: 65px;
+    width: 80%;
     height: 650px;
+    place-items: center;
     border: 2px solid rgb(10, 54, 65);
     
   }
