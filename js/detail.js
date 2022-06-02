@@ -24,4 +24,4 @@ async function getJacket() {
         console.log("error")
     }
 }
-getJacket()
+getJacket();
