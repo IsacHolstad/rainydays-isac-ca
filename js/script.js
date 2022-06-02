@@ -17,7 +17,7 @@ async function showJackets() {
             jacketData.innerHTML += `<li class="list-details">
             <a href="detaild-jckt.html?id=${responseJSON[i].id}">
             ${responseJSON[i].name}</li>
-            <center><button>Buy</button></center>
+            <center><button class="buy-btn">Buy</button></center>
             <div>${responseJSON[i].description}</div`
             
         }

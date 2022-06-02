@@ -15,6 +15,12 @@ a {
     text-decoration: none;
     
   }
+  .buy-btn{
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+  }
   .list-details{
     display: flex;
     padding: 25px;
