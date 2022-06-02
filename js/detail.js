@@ -16,7 +16,7 @@ async function getJacket() {
         const jacketData = await response.json();
         jcktDataInfo.innerHTML = `<li class="detaild-item">${jacketData.name} 
         ${jacketData.price_html}</li>
-        <div>${jacketData.description}</div
+        <div class="jacket-img">${jacketData.description}</div
         <p class="ptag-description">${jacketData.short_description}</p>`
 
     }

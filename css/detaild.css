@@ -111,6 +111,7 @@ a {
     top: 200px;
     width: 80%;
     height: 650px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     place-items: center;
     border: 2px solid rgb(10, 54, 65);
     
@@ -134,11 +135,14 @@ a {
   }
   .ptag-description{
     padding-top: 300px;
+    width: 200px;
     
   }
-  img{
-    display: flex;
+  .jacket-img{
+    width: 70%;
+    height: 30%;
   }
+  
   .jacket-png{
     width: 200px;
     padding-top: 50px;
